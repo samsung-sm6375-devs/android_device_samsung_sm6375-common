@@ -89,6 +89,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.qcom_ramdisk \
 
 # Recovery
 PRODUCT_PACKAGES += \
