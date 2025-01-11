@@ -14,6 +14,10 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# AID/fs configs
+PRODUCT_PACKAGES += \
+    fs_config_files \
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.default \
