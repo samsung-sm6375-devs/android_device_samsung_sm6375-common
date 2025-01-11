@@ -46,5 +46,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend \
 
+# Graphics
+PRODUCT_PACKAGES += \
+    libion \
+    libvulkan \
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/sm6375-common/sm6375-common-vendor.mk)
