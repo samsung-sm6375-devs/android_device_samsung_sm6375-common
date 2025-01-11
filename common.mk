@@ -86,5 +86,13 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/qcom-common/overlay \
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc \
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/sm6375-common/sm6375-common-vendor.mk)
