@@ -14,5 +14,19 @@ PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.primary.default \
+    audio.r_submix.default \
+    audio.usb.default \
+    cplay \
+    libaudioroute \
+    libaudioutils \
+    libtinyalsa \
+    tinycap \
+    tinymix \
+    tinypcminfo \
+    tinyplay \
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/sm6375-common/sm6375-common-vendor.mk)
