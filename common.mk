@@ -46,13 +46,45 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend \
 
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.gatekeeper=mdfpp \
+
 # Graphics
 PRODUCT_PACKAGES += \
     libion \
     libvulkan \
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-service \
+
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.0-service.samsung \
+    libkeymaster4support.vendor:64 \
+    libkeymaster4_1support.vendor:64 \
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=mdfpp \
+    ro.security.keystore.keytype=sakv2,gak \
+
+# Memtrack
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    device/samsung/qcom-common/overlay \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/sm6375-common/sm6375-common-vendor.mk)
