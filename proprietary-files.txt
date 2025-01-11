@@ -969,7 +969,6 @@ vendor/bin/hw/macloader
 vendor/bin/cnss-daemon
 
 # WiFi (Firmware)
-vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 vendor/firmware/wlan/qca_cld/bdwlan.bin
 vendor/firmware/wlan/qca_cld/regdb.bin
 vendor/firmware/wlanmdsp.mbn
