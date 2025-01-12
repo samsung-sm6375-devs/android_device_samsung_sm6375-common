@@ -210,6 +210,52 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     fstab.qcom_ramdisk \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.qti.kernel.rc \
+    init.qti.media.rc \
+    init.ramplus.rc \
+    init.samsung.bsp.rc \
+    init.samsung.display.rc \
+    init.samsung.power.rc \
+    init.samsung.rc \
+    init.target.rc \
+    init.vendor.onebinary.rc \
+    init.vendor.rilcommon.rc \
+    init.vendor.sensors.rc \
+    init.vendor.sysfw.rc \
+    ueventd.qcom.rc \
+    vendor.samsung.rilchip.qcom.rc \
+    vendor.sensors.qti.rc \
+    vendor.sensors.sscrpcd.rc \
+    wifi_qcom.rc \
+    wifi_sm6375.rc \
+    init.class_main.sh \
+    init.crda.sh \
+    init.kernel.post_boot.sh \
+    init.kernel.post_boot-blair.sh \
+    init.kernel.post_boot-holi.sh \
+    init.mdm.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.chg_policy.sh \
+    init.qti.early_init.sh \
+    init.qti.kernel.debug.sh \
+    init.qti.kernel.debug-blair.sh \
+    init.qti.kernel.debug-holi.sh \
+    init.qti.kernel.sh \
+    init.qti.media.sh \
+    init.qti.qcv.sh \
+    qca6234-service.sh \
+    vendor_modprobe.sh \
 
 # Recovery
 PRODUCT_PACKAGES += \
