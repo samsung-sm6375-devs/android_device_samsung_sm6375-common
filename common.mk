@@ -183,6 +183,8 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/qcom-common/overlay \
 
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Perf
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
