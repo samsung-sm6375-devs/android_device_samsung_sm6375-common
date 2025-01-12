@@ -81,6 +81,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0 \
 
+# CNE
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
+    $(COMMON_PATH)/configs/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-legacy \
