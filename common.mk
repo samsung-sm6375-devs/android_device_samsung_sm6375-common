@@ -56,6 +56,21 @@ PRODUCT_PACKAGES += \
     tinypcminfo \
     tinyplay \
 
+# Audio SoundFX
+PRODUCT_PACKAGES += \
+    libaudiopreprocessing \
+    libbundlewrapper \
+    libdownmix \
+    libdynproc \
+    libeffectproxy \
+    libldnhncr \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libreverbwrapper \
+    libvisualizer \
+    libvolumelistener:32 \
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     $(COMMON_PATH)/configs/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
