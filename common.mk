@@ -155,6 +155,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libsuspend \
 
+# Data
+$(call inherit-product, vendor/qcom/opensource/dataservices/dataservices_vendor_product.mk)
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
