@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.widevine \
     android.hardware.drm@1.3.vendor \
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd \
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
