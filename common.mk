@@ -260,6 +260,11 @@ PRODUCT_PACKAGES += \
     libkeymaster4support.vendor:64 \
     libkeymaster4_1support.vendor:64 \
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service \
+
 # Media
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_blair/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_blair/video_system_specs.json \
