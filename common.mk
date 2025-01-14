@@ -276,6 +276,7 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libcodec2_vndk \
     libcodec2_vndk.vendor \
+    libsfplugin_ccodec \
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_blair/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_blair/video_system_specs.json \
