@@ -266,6 +266,10 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service \
 
 # Media
+PRODUCT_PACKAGES += \
+    libavservices_minijail \
+    libavservices_minijail.vendor \
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_blair/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_blair/video_system_specs.json \
     $(COMMON_PATH)/configs/media/media_holi/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_holi/video_system_specs.json \
