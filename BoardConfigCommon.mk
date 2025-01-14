@@ -148,6 +148,11 @@ TARGET_KERNEL_VERSION := 5.4
 # Keymaster
 TARGET_KEYMASTER_VARIANT := samsung
 
+# NFC
+ifeq ($(filter %_a23xq,$(TARGET_PRODUCT)),)
+TARGET_USES_NQ_NFC := true
+endif
+
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 

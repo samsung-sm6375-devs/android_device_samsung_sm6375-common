@@ -318,6 +318,21 @@ PRODUCT_PACKAGES += \
     android.system.net.netd@1.1 \
     netutils-wrapper-1.0 \
 
+# NFC
+ifeq ($(filter %_a23xq,$(TARGET_PRODUCT)),)
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service \
+    com.android.nfc_extras \
+    libchrome \
+    libchrome.vendor \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    SecureElement \
+    Tag \
+
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     device/samsung/qcom-common/overlay \
