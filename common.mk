@@ -600,6 +600,7 @@ PRODUCT_COPY_FILES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libnl \
+    libwfdaac_vendor \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/sm6375-common/sm6375-common-vendor.mk)
