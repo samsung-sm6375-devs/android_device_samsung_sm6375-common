@@ -365,7 +365,7 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 # Device Health
 vendor/bin/hw/android.hardware.health@2.1-service-samsung
 vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
-vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
+vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so|ed23aa839c1377d439f1b7378f22b154787ad26a
 vendor/lib64/vendor.samsung.hardware.health@2.0.so
 
 # Display (HWC)
