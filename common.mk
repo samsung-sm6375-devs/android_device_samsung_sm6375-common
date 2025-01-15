@@ -210,7 +210,6 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-service-qti \
     android.hardware.gnss@2.1.vendor \
 
 PRODUCT_COPY_FILES += \
