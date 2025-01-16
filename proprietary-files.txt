@@ -454,6 +454,8 @@ vendor/lib64/libcpion.so
 vendor/lib64/libminksocket.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
+vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk_platform.so
+vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk_platform.so
 
 # DSP
 vendor/bin/dspservice
@@ -461,6 +463,12 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+
+# Fkeymaster
+vendor/bin/vendor.samsung.hardware.security.fkeymaster-service
+vendor/etc/init/vendor.samsung.hardware.security.fkeymaster-service.rc
+vendor/etc/vintf/manifest/vendor.samsung.hardware.security.fkeymaster-service.xml
+vendor/lib64/vendor.samsung.hardware.security.fkeymaster-V1-ndk_platform.so
 
 # Gatekeeper
 vendor/lib64/hw/gatekeeper.mdfpp.so|fc74f75b74c307e4508b42e210dcec8175876203
@@ -923,6 +931,20 @@ vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
+
+# Vaultkeeper
+vendor/bin/vaultkeeperd
+vendor/bin/vendor.samsung.hardware.security.proca@2.0-service
+vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
+vendor/etc/init/pa_daemon_qsee.rc
+vendor/etc/init/vaultkeeper_common.rc
+vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
+vendor/lib/libstork_shared.so
+vendor/lib64/libdsms_vendor.so
+vendor/lib64/libstork_shared.so
+vendor/lib64/libvkmanager_vendor.so
+vendor/lib64/libvkservice.so
+vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 
 # Voice
 -system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar
