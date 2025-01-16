@@ -507,6 +507,9 @@ PRODUCT_PACKAGES += \
     qca6234-service.sh \
     vendor_modprobe.sh \
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom \
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
