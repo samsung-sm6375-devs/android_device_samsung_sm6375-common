@@ -457,6 +457,7 @@ PRODUCT_COPY_FILES += \
 
 # Ramdisk
 PRODUCT_PACKAGES += \
+    debug.rc \
     fstab.qcom \
     fstab.qcom_ramdisk \
     init.qcom.factory.rc \
